@@ -1,0 +1,246 @@
+:root {
+    --banner-color: #272425;
+    --btn-color-light: #7CC6F2;
+    --btn-color: #003087;
+    --header-hover: grey;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background: #BBBCBC;
+    background-image: url(speckle.jpg);
+    background-attachment: fixed;    
+}
+body {
+    margin: 0;
+    margin-top: 70px;
+    font-family: 'Pluto', sans-serif;
+}
+.navHeading {
+    float: left;
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+    
+   /* font-family: 'Oleo Script';*/
+    font-family: 'oreosoutline';
+    /*letter-spacing: 2px;*/
+    color: var(--btn-color);
+    font-size: 24px;
+    transition: all .3s ease-in-out;
+
+}
+.navHeading:hover {
+    color: var(--banner-color)
+}
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+    background: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+    
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.oreo-icon {
+    width: 60px;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    
+    transition: all ease-in-out .2s;
+}
+#container-world {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    padding-top: 10px;
+    padding-bottom:20px;
+    
+    text-align: center;
+    transition: all .3s ease-in-out;
+}    
+.header-container{
+    width: 100%;
+    text-align: left;
+    margin-bottom: -30px;
+    
+    background: var(--btn-color);
+    border-radius: 20px;   
+    box-shadow: 4px 6px #002754;
+}
+#header-datatype {
+    padding-left: 12px;
+    padding-top: 10px;
+    overflow: wrap;
+    
+    color: #fff;
+    font-family: 'Pluto';
+    font-size: 36px;
+    font-weight: 1000;
+}
+#subheader-datatype {
+    margin-top: -50px;
+    padding-left: 12px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    color: var(--btn-color-light);
+    font-family: 'Pluto';
+    font-size: 14px;
+    font-weight: 1000;    
+}
+#limit-container {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 5px;
+    
+    font-size: 18px;
+    background: #EB5A46;
+    color: #FFF;
+    border-radius: 10px;
+    
+    transition: opacity ease-in-out .5s;
+}
+#btn-oreo-counter{
+    outline: none;
+    
+    margin-bottom: 40px;
+    transition: all ease-in-out .2s;
+}
+#btn-oreo-counter:active{
+    transform: translateY(15px);
+}
+.oreo-img {
+    width: 100%;
+    max-width: 400px;
+}
+.counter-container{
+    width: 100%;
+    
+    margin: auto;
+    margin-top: -50px;
+    text-align: left;
+    padding-left: 20px;
+    
+    font-size: 32px;
+    font-weight: 1000;
+    color: #fff;
+    background-color: var(--btn-color);
+    border-radius: 10px;
+    box-shadow: 4px 8px #000;
+    word-break: break-all;
+}
+#counter {
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+    
+    font-size: 34px;
+    color: var(--btn-color-light);
+}
+.counter-title {
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #fff;
+    font-family: 'pluto';
+    font-size: 40px;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    
+    background: var(--btn-color);
+}
+.footer-text{
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px;
+    color: var(--btn-color-light);
+    text-align: center;
+}
+.footer-text-small{
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 8px;
+    color: var(--btn-color-light);
+    text-align: center;
+}
+a:hover{
+    color: #fff;
+}
+@media only screen and (min-width: 1000px) {
+    .navHeading {
+        font-size: 42px;
+        padding-left: 60px;
+    }
+    #header-datatype {
+        font-size: 38px;
+    }
+    #subheader-datatype {
+        font-size: 26px;
+    }
+    #container-world {
+        max-width: 1200px;
+    }
+    .oreo-icon{
+        width: 80px;
+        padding-right: 60px;
+    }
+    .oreo-icon:hover{
+        transform: scale(1.1);
+    }
+    #btn-oreo-counter:hover{
+        transform: scale(1.1);
+    }
+    .footer-text{
+        font-size: 22px;
+    }
+    .footer-text-small{
+        font-size: 17px;
+    }
+    
+}
+@font-face {
+    font-family: 'oreosoutline';
+    src: url('oreos-webfont.woff2') format('woff2'),
+         url('oreos-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pluto';
+    src: url('PlutoSansCondRegular.woff2') format('woff2'),
+         url('PlutoSansCondRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+

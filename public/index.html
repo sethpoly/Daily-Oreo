@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Daily Oreo</title>
+    <meta name="description" content="A Universal Oreo Counter that is updated in real-time. Click the Oreo when you eat an Oreo.">
+    <meta name="keywords" content="Oreo, Universal Oreo Counter, Oreo counter">
+    <meta name="author" content="Seth Polyniak">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Montserrat|Sigmar+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+  </head>  
+  <header>
+  </header>
+<body>
+   <ul class="navBar">
+        <a href="index.html"><h2 class="navHeading site-name">Daily Oreo</h2></a>
+       <!--TODO Put oreo icon in top right corner-->
+        <a href="index.html"><img class="oreo-icon" src="oreo_transparent.png"></a>
+   </ul> 
+    <div id="container-world">
+        <div class="header-container">
+            <h2 id="header-datatype">Universal Oreo Counter</h2>
+            <h3 id="subheader-datatype">Click the Oreo when you eat an Oreo.</h3>
+            <p id="counter">...</p>
+        </div>
+        <div id="limit-container">
+            <p>I think 50 Oreos is enough for today. Save some Oreos for tomorrow.</p>
+        </div>
+        <div class="container-oreo-btn">
+            <input onclick="clickOreo()" type="image" class="oreo-img" src="oreo-bit.png" id="btn-oreo-counter"/>
+        </div>
+<!--
+        <div class="counter-container">
+            <p class="counter-title">Oreos eaten...</p>
+            <p id="counter">...</p>
+        </div>
+-->
+    </div>
+</body> 
+<footer>
+    <a href="https://sethpoly.com/" target="_blank" class="footer-text">Seth Polyniak &copy;2020</a>
+    <a href="https://www.vecteezy.com/free-vector/meal" target="_blank" class="footer-text-small">Oreo Vectors by Vecteezy</a>
+
+</footer>
+<script>    
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB0D9IoI5vGyPvoEX6Rxt02vZwImg9-iJk",
+    authDomain: "dailyoreo-f5906.firebaseapp.com",
+    databaseURL: "https://dailyoreo-f5906.firebaseio.com",
+    projectId: "dailyoreo-f5906",
+    storageBucket: "dailyoreo-f5906.appspot.com",
+    messagingSenderId: "96337160933",
+    appId: "1:96337160933:web:562112082f83cabf82020c",
+    measurementId: "G-Q5YVVEZQP4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="home.js"></script>
+</html>
