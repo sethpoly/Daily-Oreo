@@ -4,4 +4,4 @@ https://dailyoreo.com
 <br>
 <br>
 ## Click the Oreo whenever you eat an Oreo. 
-![Preview](https://raw.githubusercontent.com/sethpoly/daily-oreo/master/oreo_imgs/home.PNG) 
+![Preview](https://raw.githubusercontent.com/sethpoly/Daily-Oreo/master/Oreo_imgs/home.PNG) 
